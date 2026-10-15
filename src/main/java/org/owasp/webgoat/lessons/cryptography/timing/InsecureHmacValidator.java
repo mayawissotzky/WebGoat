@@ -10,7 +10,6 @@ import java.util.concurrent.locks.LockSupport;
 import java.util.function.IntUnaryOperator;
 import java.util.function.LongConsumer;
 
-/** Intentionally insecure code used only to demonstrate a timing side channel. */
 final class InsecureHmacValidator {
 
   private final LongConsumer delay;

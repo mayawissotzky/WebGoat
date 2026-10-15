@@ -47,7 +47,6 @@ public class IDOREditOtherProfile implements AssignmentEndpoint {
     // as the logged in userId and not checking for proper authorization
     // Certain roles can sometimes edit others' profiles, but we shouldn't just assume that and let
     // everyone, right?
-    // Except that this is a vulnerable app ... so we will
     UserProfile currentUserProfile = new UserProfile(userId);
     if (userSubmittedProfile.getUserId() != null
         && !userSubmittedProfile.getUserId().equals(authUserId)) {

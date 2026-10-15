@@ -3,7 +3,7 @@
 
 Welcome `username:user[]`!
 
-WebGoat is a deliberately insecure application that allows interested developers just like you to _test vulnerabilities_
+WebGoat is an application that allows interested developers just like you to _test vulnerabilities_
 commonly found in Java-based applications that use common and popular open source components.
 
 Now, while we in no way condone causing intentional harm to any animal, goat or otherwise, we think learning everything

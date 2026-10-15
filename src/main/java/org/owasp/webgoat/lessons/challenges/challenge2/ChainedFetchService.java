@@ -47,7 +47,7 @@ public class ChainedFetchService {
         if (redirects == MAX_REDIRECTS) {
           throw new IllegalArgumentException("Too many redirects");
         }
-        // The source path is checked once. Redirect targets intentionally bypass that check.
+        // The source path is checked once.
         current = followRedirect(current);
       } else if (path.equals(lessonRoot + INTERNAL_PATH)) {
         ResponseEntity<Map<String, String>> response = diagnostic.diagnostics(state.internalToken());

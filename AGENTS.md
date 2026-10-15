@@ -39,7 +39,7 @@
 - `src/main/java/org/owasp/webgoat/container/` - WebGoat engine, users, progress, rendering, services.
 - `src/main/java/org/owasp/webgoat/container/lessons/` - Lesson model, discovery, assignment registration.
 - `src/main/java/org/owasp/webgoat/container/assignments/` - Results, hints, and progress interception.
-- `src/main/java/org/owasp/webgoat/lessons/` - Deliberately vulnerable lesson implementations.
+- `src/main/java/org/owasp/webgoat/lessons/` - Lesson implementations.
 - `src/main/java/org/owasp/webgoat/webwolf/` - Companion attack-host application.
 - `src/main/resources/application-webgoat.properties` - WebGoat runtime configuration.
 - `src/main/resources/application-webwolf.properties` - WebWolf runtime configuration.
@@ -72,7 +72,6 @@
 
 ## Strict architectural constraints
 
-- WebGoat is intentionally vulnerable training software.
 - NEVER fix, sanitize, remove, or refactor a lesson vulnerability by default.
 - This prohibition includes SQL injection, XSS, XXE, SSRF, CSRF, deserialization,
   path traversal, command injection, weak cryptography, and access-control flaws.
